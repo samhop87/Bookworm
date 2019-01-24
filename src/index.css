@@ -1,0 +1,330 @@
+body {
+  background-color: #feafc8;
+  margin: 0;
+}
+h2,
+p,
+ul,
+li {
+  font-family: sans-serif;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 400px) {
+  h1 {
+    font-family: "Libre Barcode 128 Text", cursive;
+    text-align: center;
+    margin: 1.6rem 0 1.5rem;
+    font-size: 6rem;
+  }
+
+  .about {
+    background-color: white;
+    width: 100%;
+    border-radius: 30px;
+    border-style: inset;
+    margin-top: 2rem;
+  }
+
+  .about h2,
+  .about p {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+  }
+
+  body {
+    padding: 30px;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  ul.header li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    border-radius: 20px;
+    height: 100%;
+  }
+  ul.header {
+    background-color: #111;
+    border-radius: 20px;
+    height: 2.5rem;
+    text-align: center;
+  }
+  ul.header li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 11px 7px;
+    display: inline-block;
+    border-radius: 20px;
+  }
+  ul.header li a:hover,
+  ul.header li a:active {
+    background-color: grey;
+  }
+
+  .active {
+    background-color: grey;
+  }
+
+  .intro-box p,
+  .intro-box h2 {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .intro-box {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .questions {
+    margin-top: 3rem;
+    text-align: center;
+    font-family: "Oleo Script", cursive;
+    font-size: 3rem;
+  }
+
+  .worm-box {
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    width: 100%;
+    border-style: inset;
+  }
+
+  .worm-box img {
+    height: 13rem;
+    border-radius: 30px;
+  }
+
+  .worm-message {
+    order: 2;
+    vertical-align: center;
+    text-align: center;
+    padding: 5px;
+    margin-top: 2rem;
+  }
+
+  .input-box,
+  .search-button {
+    height: 4rem;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .input-box {
+    width: 50%;
+    font-weight: bold;
+  }
+
+  select {
+    font-size: 1.2rem;
+    padding-left: 2rem;
+  }
+
+  /* .horror {
+  } */
+
+  .search-form {
+    text-align: center;
+  }
+
+  .search-button {
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+  }
+
+  .sci-msg {
+    font-family: "Press Start 2P", cursive;
+    font-size: 1.2rem;
+  }
+  .rom-msg {
+    font-family: "Oleo Script", cursive;
+    font-size: 1.8rem;
+  }
+  .clwn-msg {
+    font-family: "Freckle Face", cursive;
+    font-size: 1.6rem;
+  }
+  .nonf-msg {
+    font-family: "Gruppo", cursive;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  .hor-msg {
+    font-family: "Creepster", cursive;
+    font-size: 1.6rem;
+  }
+  .cls-msg {
+    font-family: "Eagle Lake", cursive;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  .adv-msg {
+    font-family: "Walter Turncoat", cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .norm-msg {
+    margin-top: 3rem;
+  }
+
+  .book-list {
+    width: 100%;
+    margin: 0;
+    padding-inline-start: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .book-wrap {
+    flex: 1 0 10rem;
+    list-style-type: none;
+    height: 20rem;
+    margin: 1rem 0.5rem;
+    display: block;
+  }
+
+  .book-wrap img {
+    width: 80%;
+    height: 80%;
+  }
+  .booklink {
+    height: 2rem;
+    display: block;
+  }
+  .spotlight-content {
+    background-color: white;
+    border-radius: 30px;
+    border-style: inset;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .spotlight-title {
+    padding: 2rem;
+    font-family: "Walter Turncoat", cursive;
+    text-decoration: underline;
+  }
+  .spot-sub,
+  .spot-sub-sub {
+    font-family: "Walter Turncoat", cursive;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 9rem;
+  }
+  .worm {
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .spotlight-content {
+    margin-top: 1rem;
+  }
+
+  .container {
+    width: 60vw;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 11rem;
+  }
+
+  ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    border-radius: 20px;
+  }
+  ul.header {
+    background-color: #111;
+    padding: 0;
+    border-radius: 20px;
+  }
+  ul.header li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+  }
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .content h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .content li {
+    margin-bottom: 10px;
+  }
+
+  .search-form {
+    text-align: center;
+    height: 4rem;
+  }
+
+  .input-box,
+  .search-button {
+    height: 3rem;
+    margin: 1rem 1rem;
+    cursor: pointer;
+  }
+
+  /* CONTENT STUFF */
+
+  .worm-box img {
+    margin-left: 6rem;
+  }
+
+  .search-box {
+    flex: 1 0 50%;
+  }
+
+  .intro-box {
+    flex: 1 0 100%;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /*LARGEST MEDIA QUERY */
+
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 14rem;
+    }
+    .worm-box img {
+      margin-left: none;
+    }
+    .book-list {
+      margin-top: 1rem;
+    }
+    .worm-message {
+      margin-left: 8rem;
+      margin-right: 2rem;
+    }
+  }
+}
